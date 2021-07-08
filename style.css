@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+header,main
+{
+    margin: 3% 8%;
+}
+header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+header .name-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+header .name-section img
+{
+    width: 25%;
+    height: 100%;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+header .name-section .name
+{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+header .name-section .location
+{
+    font-size: 14px;
+    font-weight: 600;
+    color: #A9A9A9;
+}
+header .info-section
+{
+    display: flex;
+    gap: 1rem;
+}
+header .info-section .posts,
+header .info-section .followers,
+header .info-section .following
+{
+    width: 96px;
+    height: 64px;
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+header .info-section .posts .post-container,
+header .info-section .followers .followers-container,
+header .info-section .following .following-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header .info-section .posts .post-container .post,
+header .info-section .followers .followers-container .follower,
+header .info-section .following .following-container .followings
+{
+    font-size: 18px;
+    font-weight: 600;
+}
+header .info-section .posts .post-container .post-text,
+header .info-section .followers .followers-container .follower-text,
+header .info-section .following .following-container .followings-text
+{
+    font-size: 14px;
+    font-weight: 600;
+    color: #BDBDBD;
+}
+.gallery
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+}
+.gallery img
+{
+    width: 100%;
+    border-radius: 12px;
+    height: 100%;
+}
+.gallery .image1
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.gallery .image2
+{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.gallery .image3
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.gallery .image4
+{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.gallery .image5
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.gallery .image6
+{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+footer
+{
+    color: #B9BDCF;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+footer a
+{
+    color: #B9BDCF;
+    font-weight: 700;
+    text-decoration: none;
+}
+@media (max-width:500px)
+{
+    header,main
+    {
+        margin: 2rem 1rem;
+    }
+    header .name-section img
+    {
+        width: 30%;
+    }
+    header .name-section .name
+    {
+        font-size: 14px;
+    }
+    header .name-section .location
+    {
+        font-size: 10px;
+    }
+    header .info-section .posts,
+    header .info-section .followers,
+    header .info-section .following
+    {
+        width: 78px;
+        height: 52px;
+        background-color: #E5E5E5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+    }
+    header .info-section .posts .post-container .post,
+    header .info-section .followers .followers-container .follower,
+    header .info-section .following .following-container .followings
+    {
+        font-size: 12px;
+    }
+    header .info-section .posts .post-container .post-text,
+    header .info-section .followers .followers-container .follower-text,
+    header .info-section .following .following-container .followings-text
+    {
+        font-size: 12px;
+    }
+    footer
+    {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+}
